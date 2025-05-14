@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran - NauBIMBEL</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        
+        .container {
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            margin-top: 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #004080;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        input,
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        
+        .btn-primary {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .btn-primary:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Formulir Pendaftaran</h2>
+        <form onsubmit="submitForm(event)">
+            <input type="text" name="nama" placeholder="Nama Lengkap" required />
+            <input type="email" name="email" placeholder="Email Aktif" required />
+            <input type="text" name="telepon" placeholder="No. Telepon / WhatsApp" required />
+            <select name="kelas" required>
+                <option value="">Pilih Jenjang Kelas</option>
+                <option value="SD">SD</option>
+                <option value="SMP">SMP</option>
+                <option value="SMA">SMA</option>
+            </select>
+            <button type="submit" class="btn-primary">Daftar Sekarang</button>
+        </form>
+    </div>
+
+    <script>
+        function submitForm(e) {
+            e.preventDefault();
+            alert("Pendaftaran berhasil dikirim. Kami akan segera menghubungi Anda!");
+        }
+    </script>
+</body>
+
+</html>

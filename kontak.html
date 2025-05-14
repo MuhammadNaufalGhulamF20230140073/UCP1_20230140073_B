@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak NauBIMBEL</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background-color: #004080;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .navbar nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .navbar nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            padding: 40px;
+        }
+        
+        h2 {
+            color: #004080;
+            margin-bottom: 20px;
+        }
+        
+        .kontak-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            gap: 15px;
+        }
+        
+        .kontak-form input,
+        .kontak-form textarea {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        
+        .kontak-form textarea {
+            resize: vertical;
+            height: 120px;
+        }
+        
+        .btn-primary {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">NauBIMBEL</div>
+        <nav>
+            <a href="utama.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="fitur.html">Fitur</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Hubungi Kami</h2>
+        <p>Jika Anda memiliki pertanyaan, saran, atau ingin bekerja sama dengan NauBIMBEL, silakan isi formulir di bawah ini.</p>
+        <form onsubmit="sendMessage(event)" class="kontak-form">
+            <input type="text" name="nama" placeholder="Nama Anda" required />
+            <input type="email" name="email" placeholder="Alamat Email" required />
+            <input type="text" name="subjek" placeholder="Subjek Pesan" required />
+            <textarea name="pesan" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            <button type="submit" class="btn-primary">Kirim Pesan</button>
+        </form>
+    </main>
+
+    <script>
+        function sendMessage(e) {
+            e.preventDefault();
+            alert("Pesan Anda telah dikirim. Kami akan segera menghubungi Anda.");
+        }
+    </script>
+</body>
+
+</html>

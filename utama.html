@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NauBIMBEL - Platform Belajar Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        .media-section {
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .media-section h2 {
+            font-size: 24px;
+            color: #004080;
+            margin-bottom: 20px;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .gallery img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        /* Modal Styles */
+        
+        #popupModal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            animation: fadeIn 0.4s ease-in-out;
+        }
+        
+        #popupContent {
+            background: linear-gradient(145deg, #ffffff, #e6f0ff);
+            margin: 10% auto;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            animation: slideDown 0.5s ease;
+        }
+        /* Animations */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        /* Close Button Styling */
+        
+        .close-btn {
+            margin-top: 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .close-btn:hover {
+            background-color: #0066cc;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">NauBIMBEL</div>
+        <nav>
+            <a href="utama.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="fitur.html">Fitur</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Belajar Seru & Interaktif</h1>
+            <p>Gabung sekarang dan mulai perjalanan belajarmu dengan NauBIMBEL!</p>
+            <a href="daftar.html" class="btn-primary">Daftar Sekarang</a>
+        </div>
+        <img src="assets/images/logo1.png" alt="Belajar Online" />
+    </section>
+
+    <!-- Bagian Video Promosi -->
+    <section class="media-section">
+        <h2>Video Pengenalan NauBIMBEL</h2>
+        <div style="width: 100%; max-width: 500px; margin: 0 auto;">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/h92oHokvGSM" title="Video NauBIMBEL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Foto -->
+    <section class="media-section">
+        <h2>Tampilan NauBIMBEL jika di Aplikasi</h2>
+        <div class="gallery">
+            <img src="assets/images/foto1.png" alt="Suasana Belajar 1">
+        </div>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="popupModal">
+        <div id="popupContent">
+            <img src="https://cdn-icons-png.flaticon.com/512/4201/4201973.png" alt="Welcome Icon" width="80" style="margin-bottom: 20px;" />
+            <h2 style="color: #004080; font-size: 24px; margin-bottom: 10px;">Selamat Datang!</h2>
+            <p style="font-size: 16px; color: #333;">Terima kasih telah mengunjungi NauBIMBEL. Yuk mulai belajar!</p>
+            <button class="close-btn" onclick="closePopup()">Mulai</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Eksternal -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

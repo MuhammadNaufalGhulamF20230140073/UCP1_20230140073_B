@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fitur NauBIMBEL</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background-color: #004080;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .navbar nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .navbar nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            padding: 40px;
+        }
+        
+        h2 {
+            font-size: 30px;
+            color: #004080;
+            margin-bottom: 30px;
+        }
+        
+        .fitur-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: linear-gradient(to bottom right, #ffffff, #e8f0fe);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card h3 {
+            font-size: 22px;
+            margin-top: 15px;
+        }
+        
+        .card p {
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .emoji {
+            font-size: 40px;
+        }
+        
+        .progress-section {
+            margin-top: 50px;
+        }
+        
+        .progress-container {
+            background-color: #ddd;
+            border-radius: 20px;
+            padding: 5px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        
+        .progress-bar {
+            background-color: #4CAF50;
+            height: 20px;
+            border-radius: 20px;
+            width: 80%;
+            text-align: right;
+            padding-right: 10px;
+            color: white;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">NauBIMBEL</div>
+        <nav>
+            <a href="utama.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="fitur.html">Fitur</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Fitur Unggulan NauBIMBEL</h2>
+        <div class="fitur-grid">
+            <div class="card">
+                <div class="emoji">🎥</div>
+                <h3>Video Pembelajaran</h3>
+                <p>Akses ribuan video berkualitas tinggi yang dibuat oleh mentor ahli.</p>
+            </div>
+            <div class="card">
+                <div class="emoji">🧠</div>
+                <h3>Kuis Interaktif</h3>
+                <p>Uji pemahamanmu setelah belajar dengan kuis-kuis yang seru dan adaptif.</p>
+            </div>
+            <div class="card">
+                <div class="emoji">📊</div>
+                <h3>Statistik Belajar</h3>
+                <p>Lihat progres dan statistik belajarmu secara real-time.</p>
+            </div>
+            <div class="card">
+                <div class="emoji">👩‍🏫</div>
+                <h3>Mentor Online</h3>
+                <p>Tanya jawab langsung dengan mentor melalui forum dan live chat.</p>
+            </div>
+        </div>
+
+        <!-- Progress bar simulasi -->
+        <div class="progress-section">
+            <h3>Progres Belajarmu Hari Ini</h3>
+            <div class="progress-container">
+                <div class="progress-bar">50%</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

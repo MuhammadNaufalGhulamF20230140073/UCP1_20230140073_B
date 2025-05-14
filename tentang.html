@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tentang NauBIMBEL</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 17px;
+            background: linear-gradient(to bottom, #f0f4ff, #ffffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background-color: #0051ff;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .navbar nav a {
+            color: white;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .navbar nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            padding: 50px 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        h2 {
+            color: #0040a0;
+            font-size: 28px;
+            margin-top: 50px;
+            border-left: 6px solid #0051ff;
+            padding-left: 15px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        
+        .team-img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th,
+        td {
+            padding: 14px 16px;
+            text-align: center;
+            font-size: 17px;
+        }
+        
+        th {
+            background-color: #0051ff;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f6ff;
+        }
+        
+        tr:hover {
+            background-color: #e9f0ff;
+        }
+        
+        .emoji {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">NauBIMBEL</div>
+        <nav>
+            <a href="utama.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="fitur.html">Fitur</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2><span class="emoji">🌟</span>Visi & Misi</h2>
+            <p>Kami ingin membuat belajar jadi sesuatu yang disukai, bukan ditakuti. Dengan NauBIMBEL, kamu bisa belajar di mana saja, kapan saja, dan tetap seru!</p>
+        </section>
+
+        <section>
+            <h2><span class="emoji">👥</span>Tim Kami</h2>
+            <img src="assets/images/team.jfif" alt="Tim NauBIMBEL" class="team-img">
+            <p>Tim kami terdiri dari pengajar muda dan tua, kreatif, dan tech-savvy yang peduli dengan masa depan pendidikan Indonesia.</p>
+        </section>
+
+        <section>
+            <h2><span class="emoji">⚖️</span>Kenapa Pilih Kami?</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fitur</th>
+                        <th>NauBIMBEL</th>
+                        <th>Platform Lain</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mentor Interaktif 👨‍🏫</td>
+                        <td>✔</td>
+                        <td>✖</td>
+                    </tr>
+                    <tr>
+                        <td>Video HD 📺</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>Kuis & Games 🕹️</td>
+                        <td>✔</td>
+                        <td>✖</td>
+                    </tr>
+                    <tr>
+                        <td>Belajar via HP 💡</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>Support via Chat 💬</td>
+                        <td>✔</td>
+                        <td>✖</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
